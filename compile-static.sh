@@ -12,9 +12,9 @@ cd libcroco-0.6.8
 make && make install 
 cd ..
 
-curl -OL http://ftp.gnome.org/pub/GNOME/sources/pango/1.28/pango-1.28.4.tar.bz2
-tar xf pango-1.28.4.tar.bz2
-cd pango-1.28.4
+curl -OL http://ftp.gnome.org/pub/GNOME/sources/pango/1.39/pango-1.39.0.tar.xz
+tar xf pango-1.39.0.tar.xz
+cd pango-1.39.0
 ./configure --prefix=/home/ec2-user/build --with-included-modules --disable-shared --enable-static
 make && make install 
 cd ..
@@ -26,9 +26,9 @@ cd gdk-pixbuf-2.28.2
 make && make install
 cd ..
 
-curl -OL http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.26/librsvg-2.26.3.tar.gz
-tar xf librsvg-2.26.3.tar.gz 
-cd librsvg-2.26.3
+curl -OL http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.40/librsvg-2.40.18.tar.xz
+tar xf librsvg-2.40.18.tar.xz 
+cd librsvg-2.40.18
 ./configure --prefix=/home/ec2-user/build --disable-shared --enable-static 
 make && make install 
 cd ..
