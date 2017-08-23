@@ -5,23 +5,23 @@ rm -rf build *.pdf
 
 mkdir build
 
-curl -OL http://ftp.gnome.org/pub/GNOME/sources/libcroco/0.6/libcroco-0.6.8.tar.xz
-tar xf libcroco-0.6.8.tar.xz 
-cd libcroco-0.6.8
+curl -OL http://ftp.gnome.org/pub/GNOME/sources/libcroco/0.6/libcroco-0.6.12.tar.xz
+tar xf libcroco-0.6.12.tar.xz 
+cd libcroco-0.6.12
 ./configure --prefix=/home/ec2-user/build --disable-shared --enable-static
 make && make install 
 cd ..
 
-curl -OL http://ftp.gnome.org/pub/GNOME/sources/pango/1.39/pango-1.39.0.tar.xz
-tar xf pango-1.39.0.tar.xz
-cd pango-1.39.0
+curl -OL http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.10.tar.xz
+tar xf pango-1.40.10.tar.xz
+cd pango-1.40.10
 ./configure --prefix=/home/ec2-user/build --with-included-modules --disable-shared --enable-static
 make && make install 
 cd ..
 
-curl -OL http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.28/gdk-pixbuf-2.28.2.tar.xz 
-tar xf gdk-pixbuf-2.28.2.tar.xz 
-cd gdk-pixbuf-2.28.2
+curl -OL http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.8.tar.xz 
+tar xf gdk-pixbuf-2.36.8.tar.xz 
+cd gdk-pixbuf-2.36.8
 ./configure --prefix=/home/ec2-user/build --without-gdiplus --disable-modules --with-included-loaders=yes --disable-shared --enable-static
 make && make install
 cd ..
