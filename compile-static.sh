@@ -5,6 +5,13 @@ rm -rf build *.pdf
 
 mkdir build
 
+curl -OL http://ftp.gnome.org/pub/gnome/sources/glib/2.52/glib-2.52.3.tar.xz
+tar xf glib-2.52.3.tar.xz 
+cd glib-2.52.3
+./configure --prefix=/home/ec2-user/build
+make && make install 
+cd ..
+
 curl -OL http://ftp.gnome.org/pub/GNOME/sources/libcroco/0.6/libcroco-0.6.12.tar.xz
 tar xf libcroco-0.6.12.tar.xz 
 cd libcroco-0.6.12
